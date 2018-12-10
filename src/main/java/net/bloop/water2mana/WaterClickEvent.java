@@ -54,7 +54,7 @@ public class WaterClickEvent {
 
     //thanks direwolf20
     public static RayTraceResult getLookingAt(EntityPlayer player) {
-        float rayTraceRange = 32f;
+        double rayTraceRange = player.getEntityAttribute(EntityPlayer.REACH_DISTANCE).getAttributeValue();
 
         World world = player.world;
         Vec3d look = player.getLookVec();
