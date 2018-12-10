@@ -11,7 +11,6 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.FillBucketEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import vazkii.botania.common.block.ModBlocks;
@@ -19,26 +18,6 @@ import vazkii.botania.common.block.tile.mana.TilePool;
 
 @EventBusSubscriber(modid = Water2Mana.MODID)
 public class WaterClickEvent {
-
-    @SubscribeEvent
-    public static void FillPool(PlayerInteractEvent.RightClickBlock event)
-    {
-        /*World world = event.getWorld();
-        Block block = event.getWorld().getBlockState(event.getPos()).getBlock();
-        Item item = event.getItemStack().getItem();
-        EntityPlayer player = event.getEntityPlayer();
-
-        if(block == ModBlocks.pool)
-        {
-            TilePool pool = (TilePool) event.getWorld().getTileEntity(event.getPos());
-
-            if (item == Items.WATER_BUCKET && !world.isRemote && !player.isSneaking()) {
-                pool.recieveMana(1000000);
-                if (!player.capabilities.isCreativeMode)
-                    player.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, new ItemStack(Items.BUCKET));
-            }
-        }*/
-    }
 
     @SubscribeEvent
     public static void EmptyPool(FillBucketEvent event)
