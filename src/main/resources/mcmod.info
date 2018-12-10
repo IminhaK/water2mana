@@ -1,0 +1,16 @@
+[
+{
+  "modid": "water2mana",
+  "name": "Water 2 Mana",
+  "description": "Turning water into mana since 2018!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["_Bloop"],
+  "credits": "Thanks to InsomniaKitten and tterrag for helping me with pretty much everything.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
